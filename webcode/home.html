@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .dashboard-wrapper {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .embed-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .instructions h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        .instructions code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Power BI Dashboard</h1>
+            <p>Real-time Business Intelligence</p>
+        </header>
+        
+        <div class="dashboard-wrapper">
+            <div class="embed-container">
+                <!-- Replace this iframe with your Power BI embed code -->
+                <iframe 
+                    title="Your Dashboard Title" 
+                    <iframe title="AC 103" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d0afacb4-12a8-45a8-be0e-a4e1204c0884&autoAuth=true&ctid=4d141e3a-154e-4337-894f-95aeceba8528" frameborder="0" allowFullScreen="true"></iframe>
+                    src="https://app.powerbi.com/reportEmbed?reportId=d0afacb4-12a8-45a8-be0e-a4e1204c0884&autoAuth=true&ctid=4d141e3a-154e-4337-894f-95aeceba8528&actionBarEnabled=true"
+                    allowFullScreen="true">
+                </iframe>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2>How to Add Your Power BI Dashboard:</h2>
+            <ol>
+                <li>Go to <strong>Power BI Service</strong> (app.powerbi.com)</li>
+                <li>Open your dashboard or report</li>
+                <li>Click <code>File</code> → <code>Embed report</code> → <code>Website or portal</code></li>
+                <li>Copy the <strong>embed URL</strong> from the dialog</li>
+                <li>Replace <code>YOUR_POWERBI_EMBED_URL_HERE</code> in the code above with your URL</li>
+                <li>Make sure your dashboard is published and has proper sharing permissions</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
